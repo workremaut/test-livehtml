@@ -77,7 +77,7 @@ function scripts() {
 function images() {
 	return src('src/img/**/*')
 	.pipe(newer('src/img/**/*'))
-	.pipe(imagemin())
+	//.pipe(imagemin())
 	.pipe(dest('dist/img'))
 }
 
